@@ -12,7 +12,6 @@ public class MyFrame1 extends JFrame implements ActionListener {
         getContentPane().add(myTextfield);
         JButton btn1 = new JButton("Perimeter");
         JButton btn2 = new JButton("Robbery");
-        JButton btn3 = new JButton("Send more Troopers");
         JButton btn4 = new JButton("Fire Company");
         JButton btn5 = new JButton("Snow Emergency");
         FlowLayout flLeft = new FlowLayout(FlowLayout.CENTER);
@@ -20,13 +19,11 @@ public class MyFrame1 extends JFrame implements ActionListener {
 
         btn1.addActionListener(this);
         btn2.addActionListener(this);
-        btn3.addActionListener(this);
         btn4.addActionListener(this);
         btn5.addActionListener(this);
 
         pnl.add(btn1);
         pnl.add(btn2);
-        pnl.add(btn3);
         pnl.add(btn4);
         pnl.add(btn5);
 
@@ -44,9 +41,6 @@ public class MyFrame1 extends JFrame implements ActionListener {
         }
         else if(e.getActionCommand().equals("Robbery")) {
             System.out.println("Robbery");
-        }
-        else if(e.getActionCommand().equals("Send more Troopers")) {
-            System.out.println("Send more Troopers");
         }
         else if(e.getActionCommand().equals("Fire Company")){
             System.out.println("Fire Company");
